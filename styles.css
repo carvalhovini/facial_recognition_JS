@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #e6e6e6;
 }
 
 .container {
@@ -57,4 +57,41 @@ body {
 #canvas::-webkit-scrollbar-track {
     background-color: #f0f0f0;
     border-radius: 5px;
+}
+
+/* Estilos adicionais para tornar o site mais atraente */
+
+body {
+    color: #333;
+}
+
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#video, #canvas {
+    border: 2px solid #ddd;
+}
+
+#status {
+    margin: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para tornar o site responsivo em dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #video, #canvas {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
 }
