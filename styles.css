@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#video {
+    width: 50%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+#canvas {
+    width: 50%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+}
+
+#status {
+    margin: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Adicionando estilo para a barra de rolagem do vídeo e do canvas */
+#video::-webkit-scrollbar,
+#canvas::-webkit-scrollbar {
+    width: 10px;
+}
+
+#video::-webkit-scrollbar-thumb,
+#canvas::-webkit-scrollbar-thumb {
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+#video::-webkit-scrollbar-track,
+#canvas::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
